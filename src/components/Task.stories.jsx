@@ -94,6 +94,21 @@ export const AllStates = () => (
 
     <StyledLabel>Archived</StyledLabel>
     <ArchivedComponent {...Archived.args} />
+
+    <StyledHr />
+
+    <StyledLabel>Priority</StyledLabel>
+    <DefaultComponent {...Priority.args} />
+
+    <StyledHr />
+
+    <StyledLabel>IN Progress</StyledLabel>
+    <PinnedComponent {...Progress.args} />
+
+    <StyledHr />
+
+    <StyledLabel>Overdue</StyledLabel>
+    <ArchivedComponent {...Overdue.args} />
   </>
 );
 
@@ -102,11 +117,11 @@ const PinnedComponent = (args) => <Task {...args} />;
 const ArchivedComponent = (args) => <Task {...args} />;
 
 const Label = ({ children }) => (
-  <h3 style={{ margin: '10px 0', color: 'white' }}>{children}</h3>
+  <h3 style={{ margin: '0 0 10px 0', color: 'white' }}>{children}</h3>
 );
 
 const StyledLabel = ({ children }) => (
-  <h3 style={{ marginTop: '20px', marginBottom: '10px', color: 'white' }}>{children}</h3>
+  <h3 style={{ margin: '10px 0', color: 'white' }}>{children}</h3>
 );
 
 const StyledHr = () => (
