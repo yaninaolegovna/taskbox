@@ -467,3 +467,7 @@ textarea {
   font-size: 1.2em;
   font-weight: 700;
 }
+
+.list-item.TASK_PROGRESS {
+  background: linear-gradient(90deg, #f7cbba, #fab397 90%, #fff 10%);
+}

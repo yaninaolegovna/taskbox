@@ -56,6 +56,18 @@ export const Priority = {
   },
 };
 
+export const Progress = {
+  args: {
+    task: {
+      ...Default.args.task,
+      state: 'TASK_PROGRESS',
+    },
+  },
+  story: {
+    name: 'Progress',
+  },
+};
+
 export const AllStates = () => (
   <>
     <Label>Default</Label>

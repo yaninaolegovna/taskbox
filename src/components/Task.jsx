@@ -15,7 +15,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
           disabled={true}
           name="checked"
           id={`archiveTask-${id}`}
-          checked={state === "TASK_ARCHIVED"}
+          checked={state === "TASK_ARCHIVED" || state === "TASK_PROGRESS" }
         />
         <span
           className="checkbox-custom"
@@ -37,7 +37,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
         <div className="high-priority">High Priority</div>
       )}
 
-      {state !== "TASK_ARCHIVED" && (
+      {state !== "TASK_ARCHIVED" && state !== "TASK_PROGRESS" && (
         <button
           className="pin-button"
           onClick={() => onPinTask(id)}
