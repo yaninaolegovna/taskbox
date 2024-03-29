@@ -44,6 +44,18 @@ export const Archived = {
   },
 };
 
+export const Priority = {
+  args: {
+    task: {
+      ...Default.args.task,
+      state: 'TASK_PRIORITY',
+    },
+  },
+  story: {
+    name: 'Priority',
+  },
+};
+
 export const AllStates = () => (
   <>
     <Label>Default</Label>

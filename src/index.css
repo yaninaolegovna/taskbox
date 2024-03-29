@@ -322,7 +322,8 @@ textarea {
   color: #555;
 }
 
-.list-item.TASK_PINNED .icon-star {
+.list-item.TASK_PINNED .icon-star,
+.list-item.list-item.TASK_PRIORITY .icon-star {
   color: #2cc5d2;
 }
 
@@ -458,4 +459,11 @@ textarea {
   display: inline-block;
   vertical-align: top;
   max-width: 100%;
+}
+
+.list-item.TASK_PRIORITY .high-priority {
+  line-height: 3rem;
+  color: #2cc5d2;
+  font-size: 1.2em;
+  font-weight: 700;
 }

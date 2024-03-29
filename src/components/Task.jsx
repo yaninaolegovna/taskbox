@@ -33,6 +33,10 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
         />
       </label>
 
+      {state === "TASK_PRIORITY" && (
+        <div className="high-priority">High Priority</div>
+      )}
+
       {state !== "TASK_ARCHIVED" && (
         <button
           className="pin-button"
