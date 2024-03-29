@@ -68,6 +68,18 @@ export const Progress = {
   },
 };
 
+export const Overdue = {
+  args: {
+    task: {
+      ...Default.args.task,
+      state: 'TASK_OVERDUE',
+    },
+  },
+  story: {
+    name: 'Overdue',
+  },
+};
+
 export const AllStates = () => (
   <>
     <Label>Default</Label>

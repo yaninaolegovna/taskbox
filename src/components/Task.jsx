@@ -48,6 +48,10 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
           <span className={`icon-star`} />
         </button>
       )}
+
+      {state === "TASK_OVERDUE" && (
+        <span className="overdue-message">Task is overdue!!!</span>
+      )}
     </div>
   );
 }

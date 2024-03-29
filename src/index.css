@@ -50,6 +50,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -470,4 +471,19 @@ textarea {
 
 .list-item.TASK_PROGRESS {
   background: linear-gradient(90deg, #f7cbba, #fab397 90%, #fff 10%);
+}
+
+.list-item.TASK_OVERDUE {
+  position: relative;
+  border: 2px solid red;
+}
+
+.list-item.TASK_OVERDUE .overdue-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  color: red;
+  text-transform: uppercase;
 }
